@@ -1,4 +1,4 @@
 aaa
 bbb edit by cool_fix
 ccc delete edit by hot_fix
-ddd
+ddd edit by master
