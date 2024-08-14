@@ -64,4 +64,3 @@ SSH登入：1.进入当前用户的家目录 cd ~ \
 忽略文件gitignore：当前git管理目录创建.gitignore文件，文件中添加忽略管理的文件
 
 创建个人访问令牌：https://zhuanlan.zhihu.com/p/501872439
-https://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@github.com/iscat123/myFirstRepo.git
