@@ -1,0 +1,59 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+unset PYTHONPATH
+unset PYTHONHOME
+#export QTDIR=/home/zjuadmin/app/qt-5.6.3
+export QTDIR=/home/zjuadmin/app/Qt-5.9.1
+export PATH=$QTDIR/bin:$PATH
+export MANPATH=$QTDIR/man:$MANPATH
+export CPPRESTROOT=/home/zjuadmin/app/cpprest_2.10
+
+#export D5000_HOME=/home/zjuadmin/cimpower
+export ZVSCC_ROOT=/home/zjuadmin/cimpower
+export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$CPPRESTROOT/lib:$LD_LIBRARY_PATH
+
+#cimpower_env
+export CIMPOWERROOT=/home/zjuadmin/js_dse
+export PATH=$CIMPOWERROOT/bin:$PATH
+export LIBPATH=$CIMPOWERROOT/lib:$LIBPATH
+export LD_LIBRARY_PATH=$CIMPOWERROOT/lib:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+#java
+#export JAVA_HOME=/home/zjuadmin/app/jdk1.8.0_201
+#export JRE_HOME=$JAVA_HOME/jre
+#export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+#export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+export RISK_FILE_PATH=/home/zjuadmin/app/java/risk_tmp_file
+export WEB_FILE_PATH=/home/zjuadmin/app/web_tmp_file
+
+#mongodb
+export PATH=/home/zjuadmin/app/mongodb/bin:$PATH
+export PATH=/home/zjuadmin/app/rocketmq/rocketmq-all-4.5.1-bin-release/bin:$PATH
+
+#cd_cimpile_path
+alias zsrc='cd $CIMPOWERROOT/src'
+alias zss='cd $CIMPOWERROOT/src/src_self'
+alias zsw='cd $CIMPOWERROOT/src/src_web'
+alias zrbin='cd $CIMPOWERROOT/release/bin'
+alias zrlib='cd $CIMPOWERROOT/release/lib'
+alias zbin='cd $CIMPOWERROOT/bin'
+alias zlib='cd $CIMPOWERROOT/lib'
+alias zlog='cd $CIMPOWERROOT/log'
+alias zcfg='cd $CIMPOWERROOT/cfg'
+alias zdata='cd $CIMPOWERROOT/data'
+
+#tool
+alias zmake='/usr/bin/make'
+alias zrmake='qmake;zmake clean;zmake -j10'
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
