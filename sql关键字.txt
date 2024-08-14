@@ -1,0 +1,29 @@
+sql语句关键字不用区分大小写
+1.select
+2.distinct:不同的 select distinct name from table; 返回不同的name; note!!!distinct作用于所有的检索列
+3.limit
+4.offset  :指定从哪开始 select name from table limit 5 offset 5; //返回从第5行起的5行数据 //note!!!:第一个被检索的行的是第0行
+5.order by：默认升序
+6.desc:降序 note!!!只作用于直接位于其前面的列名（升序同理）
+7.asc:升序
+8.where:过滤条件{=;<>;!=;<;<=;!<;>;>=;!>;between ... and;IS NULL(为NULL值)}
+9.and
+10.or :多个逻辑操作符一起时，用圆括号；
+11.in: select name from table where name in ('aaa','bbb'); IN操作符用来指定条件范围，范围中的每个条件都可以进行匹配；和or相似，但是in可以包含其他select语句
+12.not : 否定其后的条件，与in联合使用非常有用
+13.like :配合通配符 select name from table where name like 'aa*'
+14.as:别名也称导出列 select a*b as c from table；
+15.group by：分组 select vend_id , COUNT(*) AS num_prods from products group by vend_id; 
+16.having :select cust_id ,COUNT(*) AS orders FROM orders GROUP BY cust_id HAVING COUNT(*) >=2;//where在数据分组前进行过过滤，having在分组之后过滤，where排除的行不包括在分组中。
+//select子句顺序：select 列 from 表 where 行级过滤 group by 分组说明 having 组级过滤 order by 输出排序顺序；
+
+17.insert into table(name, id)  values('aaa','001');
+18.update table set name = 'bbb' where id = '001';
+19.delete from table where name = 'bbb';//删除所有行：truncate table;
+20.CREATE TABLE tableName ( name char(10) not null, id char(10) not null); //创建表
+21.ALTER TABLE tableName ADD name CHAR(20);//添加一个字段
+22.ALTER TABLE tableName DROP COLUMN name;//删除一个字段
+23.DROP TABLE tabaleName; //删除表
+
+
+
