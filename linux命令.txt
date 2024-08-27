@@ -38,7 +38,57 @@ vim/vi：	正常、插入和命令行三种模式 \
 				halt			关机 \
 				reboot			重启 \
 
-用户登入和注销命令：su [用户名]	登入用户 \
-					logout/exit	注销
+用户登入和注销命令：登入或切换用户：	su [用户名]	 \
+					注销：	logout/exit	
 
-用户管理命令：
+用户管理命令：添加用户：	1.useradd [用户名] \
+							2.useradd -d [目录] [用户名] 添加用户并指定目录 \
+							3.useradd -g [用户组] [用户名]添加用户并指定用户组 \
+			  指定或修改密码：	passwd [用户名] \
+			  删除用户：	1.userdel [用户名]	删除用户但保留家目录 \
+							2.userdel -r [用户名]	删除用户和家目录 \
+			  修改用户的组：usermod -g [用户组] [用户名] \
+			  查询用户信息：id [用户名] \
+			  查看当前用户：whoami \
+			  
+			  添加用户组：groupadd [组名] \
+			  删除用户组：groupdel [组名] \
+			  /etc/paddwd文件：用户的配置文件，记录用户的各种信息 \
+			  /etc/shadow文件：口令配置文件 \
+			  /etc/group文件：组的配置文件
+			  
+帮助指令：man [命令] \
+		  help [命令]
+
+文件目录指令：	创建多级目录：mkdir -p [多级目录] \
+				删除目录：1.rmdir [目录名] 注：只会删除空目录\
+						  2.rm -rf [目录名] \
+				创建空文件：touch [文件名称] \
+				复制：cp -rf [source] [dest] 强制覆盖且递归 \
+				查看文件：1.cat -n [文件] 显示行号 \
+						  2.more [文件] 分屏显示 \
+						  3.less [文件] 分屏显示且边读边加载 \
+						  4.head -n [文件] 不指定n时，默认显示文件前10行(例：head -n 12 a.txt)\
+						  5.tail -n [文件] 不指定n时，默认显示末尾10行(tail -f a.txt实时监控) \
+				重定向：echo [信息] > [文件] \
+				追加  : echo [信息] >> [文件] \
+				软连接：ln -sf [原文件] [软链接名] (删除用rm命令) \
+				查看历史执行的指令：history 后面加数字就是近几个指令 \
+				执行历史编号为5的指令：!5 \
+
+时间日期指令：显示当前时间 date \
+			  设置时间 date -s [2024-08-27 22:25:00] \
+			  查看日历 cal [年月] 不加参数默认当前年月 \
+			  
+搜索查找指令：查找：find [目录] [-name/-size/-user] [文件名/+200M/root] \
+			  搜索文件位置：updatedb + locate [文件] \
+			  查看指令位置：which [指令] \
+			  过滤查找：grep [-n/-i/-r] [查找内容] [文件] n:行号，i:忽略大小写,r:搜索文件 \
+						cat a.txt |grep -ni "hello" \
+
+压缩解压指令：gzip hello.txt  得到hello.txt.gzip 只能压缩文件\
+			  gunzip hello.txt.gz \
+			  zip [-r] [xxx.zip][文件或目录] -r:递归目录 \
+			  unzip [-d] [指定目录] [xxx.zip] \
+			  tar -zcvf xx.tar.gz [文件] \
+			  tar -zxvf xx.tar.gz -C [目录]
