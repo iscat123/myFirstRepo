@@ -1,0 +1,4 @@
+﻿  归并排序.cpp
+D:\学习\数据结构与算法\zcontain\排序算法\归并排序.cpp(10,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\学习\数据结构与算法\zcontain\排序算法\归并排序.cpp(52,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  排序算法.vcxproj -> D:\学习\数据结构与算法\x64\Debug\排序算法.exe

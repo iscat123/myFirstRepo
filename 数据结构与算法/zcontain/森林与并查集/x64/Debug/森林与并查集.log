@@ -1,0 +1,21 @@
+﻿  Quick_Find算法.cpp
+  Quick_Union算法.cpp
+  按秩合并.cpp
+  路径压缩.cpp
+  正在生成代码...
+Quick_Union算法.obj : error LNK2005: "int __cdecl find(int)" (?find@@YAHH@Z) 已经在 Quick_Find算法.obj 中定义
+Quick_Union算法.obj : error LNK2005: "void __cdecl merge(int,int)" (?merge@@YAXHH@Z) 已经在 Quick_Find算法.obj 中定义
+Quick_Union算法.obj : error LNK2005: "void __cdecl output(void)" (?output@@YAXXZ) 已经在 Quick_Find算法.obj 中定义
+Quick_Union算法.obj : error LNK2005: main 已经在 Quick_Find算法.obj 中定义
+Quick_Union算法.obj : error LNK2005: "char * color" (?color@@3PADA) 已经在 Quick_Find算法.obj 中定义
+按秩合并.obj : error LNK2005: "int __cdecl find(int)" (?find@@YAHH@Z) 已经在 Quick_Find算法.obj 中定义
+按秩合并.obj : error LNK2005: "void __cdecl merge(int,int)" (?merge@@YAXHH@Z) 已经在 Quick_Find算法.obj 中定义
+按秩合并.obj : error LNK2005: "void __cdecl output(void)" (?output@@YAXXZ) 已经在 Quick_Find算法.obj 中定义
+按秩合并.obj : error LNK2005: main 已经在 Quick_Find算法.obj 中定义
+按秩合并.obj : error LNK2005: "char * color" (?color@@3PADA) 已经在 Quick_Find算法.obj 中定义
+路径压缩.obj : error LNK2005: "int __cdecl find(int)" (?find@@YAHH@Z) 已经在 Quick_Find算法.obj 中定义
+路径压缩.obj : error LNK2005: "void __cdecl merge(int,int)" (?merge@@YAXHH@Z) 已经在 Quick_Find算法.obj 中定义
+路径压缩.obj : error LNK2005: "void __cdecl output(void)" (?output@@YAXXZ) 已经在 Quick_Find算法.obj 中定义
+路径压缩.obj : error LNK2005: main 已经在 Quick_Find算法.obj 中定义
+路径压缩.obj : error LNK2005: "char * color" (?color@@3PADA) 已经在 Quick_Find算法.obj 中定义
+D:\学习\数据结构与算法\x64\Debug\森林与并查集.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

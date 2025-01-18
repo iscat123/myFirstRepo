@@ -209,7 +209,7 @@ void midOrder(AVLTree* root)
 	midOrder(root->right);
 }
 
-int main()
+int main_a()
 {
 	AVLTree* root =nullptr;	
 	root = insert(root, 90);
