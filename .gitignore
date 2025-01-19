@@ -1,0 +1,50 @@
+*.sln*
+*.vcproj*
+*.vcxproj*
+*.suo
+*.user
+
+*.idb
+*.pdb
+*.opt
+*.cbt
+
+.qmake.stash
+*.pro.bak
+
+*.rar
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+# Visual Studio Code cache/options directory
+.vscode/
+
+# Qt-es
+.qmake.cache
+.qmake.stash
+moc_*.cpp
+moc_*.h
+
+Makefile
+Makefile.*
+ClassDiagram1.cd
+
+result.sql
+*.log
+
+/solutions_vs2008
+/solutions_vs2010
+/solutions_vs2015
+
