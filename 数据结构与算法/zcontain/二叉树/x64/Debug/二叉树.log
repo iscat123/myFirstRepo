@@ -1,8 +1,0 @@
-﻿  二叉树锯齿形层序遍历.cpp
-D:\学习\数据结构与算法\zcontain\二叉树\二叉树锯齿形层序遍历.cpp(20,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-D:\学习\数据结构与算法\zcontain\二叉树\二叉树锯齿形层序遍历.cpp(45,3): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  序列化.cpp
-  线索化.cpp
-D:\学习\数据结构与算法\zcontain\二叉树\线索化.cpp(88,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  正在生成代码...
-D:\学习\数据结构与算法\zcontain\二叉树\二叉树锯齿形层序遍历.cpp(48): error C4716: “fun”: 必须返回一个值
